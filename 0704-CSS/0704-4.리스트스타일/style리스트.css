@@ -1,0 +1,20 @@
+ol{
+  list-style-type: lower-latin;
+  background-color:rgb(247, 232, 213)
+}
+/*ul > li{
+   list-style-image: url("../../images/lion.png") */
+  /* 사이즈 조절은 불가 다른 방법을 찾아야함, 사이즈 맞는 사진이나  다른 경로를 통해서 한다 */
+  /* list-style-type: none;
+  background-image: url("../../images/lion.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: left center;
+  margin: 0;
+  padding: 0 0 0 10px;
+}*/
+
+ul{
+  list-style-position: outside;
+  list-style-type: disc;
+}

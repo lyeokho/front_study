@@ -1,0 +1,14 @@
+/* 하위 선택자 */
+/* 부모의 p태그를 선택 */
+#first p{
+  color: blueviolet;
+}
+
+/* > 꺽쇠를 넣으면 바로 아래에만 적용 */
+#second > p{
+  background-color: rgb(103, 230, 103);
+}
+
+p.inner{
+  color: crimson;
+}

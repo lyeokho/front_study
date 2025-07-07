@@ -1,0 +1,31 @@
+/* 이미지 옆 글 배치 */
+.float{
+  float: left;
+}
+.clear{
+  clear: both;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+}
+.box1{
+  background-color: rgb(172, 247, 222);
+}
+.box2{
+  background-color: rgb(234, 206, 235);
+}
+.box3{
+  background-color: rgb(230, 247, 203);
+  float:right;
+}
+.box4{
+  background-color: rgb(241, 215, 167);
+  margin: auto;
+}
+.container{
+  height: 150px;
+  border: 1px solid red;
+  overflow: scroll;
+}

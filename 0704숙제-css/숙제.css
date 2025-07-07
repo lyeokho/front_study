@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(252, 240, 15);
+
+}
+
+
+.h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+.container{
+    margin-top: 200px;
+    text-align: center;
+
+}
+
+img{
+    border-radius: 100px;
+}
+
+
+
+.parent {
+  margin: 10px;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  
+  width: 100px;
+  height: 100px;
+
+}

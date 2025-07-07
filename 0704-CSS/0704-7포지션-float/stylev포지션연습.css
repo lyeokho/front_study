@@ -1,0 +1,42 @@
+/* 필수로 넣어주고 시작 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.menu{
+  width: 500px;
+  height: 100px;
+  background-color: rgb(235, 140, 15);
+}
+
+.nav{
+  width: 100px;
+  height: 300px;
+  background-color: aquamarine;
+  float: left;
+}
+
+.content{
+  width: 400px;
+  height: 300px;
+  background-color: burlywood;
+  float: left;
+  
+}
+
+.footer{
+  width: 500px;
+  height: 100px;
+  background-color: blueviolet;
+  clear: both;
+}
+
+/* 전체 묶어서 중앙으로 이동 */
+.container{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}

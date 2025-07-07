@@ -1,0 +1,13 @@
+h3 {
+  text-align: center;
+  background-color: rgb(140, 203, 240);
+  font-size: 50px;
+}
+h1{
+  color: chocolate;
+/* 적용되지는 않음 마지막 순서인 컬러가 적용되서 */
+}
+h2{
+  background-color: brown;
+
+}

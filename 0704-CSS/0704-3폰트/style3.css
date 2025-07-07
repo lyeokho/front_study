@@ -1,0 +1,52 @@
+p{
+  /* 글꼴 크기 */
+  font-size: 20px;
+
+  /* 글꼴 두께 
+  100:lighter
+  200:normal(기본값)
+  700:bold
+  900:bolder
+  */
+  font-weight: 400;
+}
+  
+  /* 16px=1em=100% */
+  body{
+    /* 줄 간격 */
+    line-height: 50px;
+    /* 글꼴 */
+    font-family:Arial, Helvetica, sans-serif
+  }
+
+  body{
+  /* 글꼴 스타일 */
+    font-style:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* t소문자를 대문자로 바꿈 */
+   
+  }
+    /* 웹 안전 글꼴: 사용자마다 사용할 수 있는
+글꼴이 한정되어있다(일반적으로 사용가능한 글꼴 
+세리프, 산세리프(일반적으로 산세리프 사용)*/
+p{
+  font: italic bold 25px '굴림', Gulim;
+  font: bold italic small-caps 20px/1.2 '돋음', '굴림', Gulim;
+}
+
+h5{
+  /* 글꼴 색 */
+  color: rgba(236, 7, 57, 0.363);
+  /* 텍스트 효과 */
+  text-decoration:underline;
+  /* 대소문자 설정 */
+  text-transform: uppercase;
+  /* (가로세로 그림자퍼짐) 그림자 */
+  text-shadow: 2px 2px 2px rgb(16, 16, 226);
+  text-shadow: 1px 1px 1px rgb(231, 231, 11);
+  /* 자간 */
+  letter-spacing: 1px;
+  /* 단어 간격 */
+  word-spacing: 10px;
+  text-align:left;
+  font-size: 20px;
+}
