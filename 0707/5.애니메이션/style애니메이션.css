@@ -1,0 +1,58 @@
+div{
+  width: 100px;
+  height: 200px;
+  background-color: rgb(183, 173, 238);
+  position: relative;
+
+  animation: ani;
+  animation-duration: 6s;
+  /* /* animation-timing-function: linear;
+  animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-out; 
+  /* animation-timing-function: ease-in-out; */
+  
+  /* 애니메이션 반복횟수 */
+  animation-iteration-count: infinite;
+
+  /* 역재생 */
+  /* animation-direction:initial; */
+
+  /* 설정한 값 한번에 지정가능 */
+  /* animation: ani 3s liner infinite alternate; */
+
+  /* animation-fill-mode:both; */
+}
+
+/* 마우스 커서로 멈춤 가능 */
+div:hover{
+  animation-play-state: paused;
+}
+
+@keyframes ani{
+  0%{
+    left: 0;  
+    background-color: rgb(217, 238, 160);  
+  }
+  25%{
+    left: 200px;
+    background-color: rgb(245, 170, 189);
+  }
+
+  50%{
+    top: 200px;
+    left: 200px;
+    background-color: rgb(136, 138, 221);
+  }
+  75%{
+    top: 200px;
+    left: 0px
+  }
+  100%{
+    top:0;
+    left:0;
+  }
+
+
+}
+

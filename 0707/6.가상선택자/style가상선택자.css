@@ -1,0 +1,60 @@
+
+
+div > p:first-child{
+  color: rgb(255, 0, 0);
+}
+
+div > p:last-child{
+  color: blue;
+}
+
+
+/*  h3사이에 다른태그 들어가면 포함된 순번으로 들어감*/
+/* 그런데 nth-of-type이 사용되면 다른 태그가 중간에 있어도 제외된 순번으로 처리됨 */
+div > h3:nth-of-type(odd){
+  color: rgb(110, 243, 1);
+}
+
+div > h3:nth-of-type(even){
+  color: darkmagenta;
+}
+
+#outer > h3:nth-child(5){
+  color: rgb(240, 205, 6);
+}
+
+/* 기본상태-페이지를 방문하지 않았을때 */
+a:link {
+  color: magenta;
+}
+
+a:visited {
+  color: blue;
+}
+
+/* 마우스 올렸을때 */
+a:hover {
+  color: goldenrod;
+}
+
+a:active {
+  color: rgb(10, 236, 236);
+}
+
+a:focus {
+  color: hotpink    ;
+}
+
+input:focus {
+  background-color: rgb(27, 2, 27);
+}
+
+input::placeholder {
+  color: lawngreen;
+}
+
+p::selection{
+  color: rgb(245, 200, 1);
+  background-color: rgb(112, 66, 10);  
+}
+
