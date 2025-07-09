@@ -1,0 +1,23 @@
+.container{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  background: yellow;
+}
+
+.container > div{
+  width: 400px;
+  height: 400px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div > h1{
+  width: 400px;
+  height: 400px;
+  background: white;
+  text-align: center;
+  line-height: 300px;
+}

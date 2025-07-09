@@ -1,0 +1,38 @@
+/* 링크태그에 색 변경 가능 */
+[href]{
+  color: blue;
+}
+
+h1[class]{
+  background-color: aqua;
+}
+
+/* 속성값 '그린'을 가진 애들을 변경 */
+[class="green"]{
+  background-color: blueviolet;
+}
+
+/* ~= 공백으로 구분해서 해당 단어가 있는 속성 변경 */
+/* [title~="태그"]{
+  color: chartreuse;
+} */
+
+/* |= 속성명이 정확하게 해당 단어, 단어 뒤 '-' 나오는거 */
+/* [title|="태그"]{
+  color: darkgreen;
+} */
+
+/* ^= 해당 단어로 시작되는 거 변경 */
+[title^="태그"]{
+  color: chocolate;
+}
+
+/* $= 해당 단어로 끝나는 거 변경 */
+[title$="태그"]{
+  color: blue;
+}
+
+/* *= 해당 단어를 포함하는 거 변경 */
+[title*="태그"]{
+  font-style: italic;
+}

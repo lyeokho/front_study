@@ -1,0 +1,26 @@
+
+.container div{
+  display: inline-block;
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+.container div:nth-child(1){
+  background-color: rgb(143, 143, 245);
+}
+.container div:nth-child(2){
+  background-color: rgb(231, 126, 126);
+}
+.container div:nth-child(3){
+  background-color: rgb(224, 224, 105);
+}
+.container div:nth-child(4){
+  background-color: rgb(103, 231, 103);
+}
+
+.container div:hover{
+  box-shadow: 3px 3px 10px rgb(15, 15, 15);
+  transform: scale(1.4);
+}

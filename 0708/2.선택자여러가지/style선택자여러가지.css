@@ -1,0 +1,15 @@
+
+/* 동위 선택자 */
+/* 기준 요소의 뒤 부터 변경 */
+h1 ~ p{
+background-color: aquamarine;
+}
+
+/* 기준 요소 뒤부터 가장 가까운 형제 하나만 변경 */
+h1 + p{
+  color: rgb(248, 3, 3);
+}
+
+input[type="checkbox"]:checked + label{
+  background-color: rgb(238, 155, 155);
+}

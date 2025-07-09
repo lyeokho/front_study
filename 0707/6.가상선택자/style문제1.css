@@ -1,0 +1,8 @@
+.login-form input:focus{
+  background-color: rgb(245, 231, 210);
+}
+
+.pagination a:hover{
+  background-color: rgb(233, 192, 192);
+}
+

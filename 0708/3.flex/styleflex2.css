@@ -1,0 +1,81 @@
+
+.parent{
+border: 1px solid red;
+display: flex;
+}
+
+.parent > div{
+  width: 100px;
+  height: 100px;
+  background: rgb(125, 208, 241);
+  margin: 5px;
+}
+
+/* flex=grow는 부모내 자식들의 비율이 분배된다. */
+.child1{
+  /* 증가비율 */
+  flex-grow: 1;
+  /* 감소비율 */
+  flex-shrink: 3;
+}
+.child2{
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.child3{
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+
+.parent2{
+border: 1px solid red;
+height: 500px;
+
+display: flex;
+}
+
+.parent2 > div{
+  width: 100px;
+  height: 100px;
+  background: rgb(239, 241, 119);
+  margin: 5px;
+
+
+  /* order는 순서 변경 0부터 시작 */
+}
+.child4{
+  flex: 1;
+  /* order: 1; */
+  align-self: center;
+}
+.child5{
+  flex: 1;
+  /* order: 2; */
+}
+.child6{
+  flex: 1;
+  /* order: 0; */
+}
+
+
+.parent3{
+border: 1px solid red;
+height: 500px;
+
+display: flex
+}
+.parent3 > div{
+  width: 100px;
+  height: 100px;
+  background: rgb(143, 226, 157);
+  
+}
+
+.child7{
+  /* margin-right: auto; */
+}
+
+.child8{
+  margin-left: auto;
+}
