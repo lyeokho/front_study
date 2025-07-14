@@ -5,7 +5,8 @@
 const FRUITS=[    //이건 배열방 
   {name: 'apple', memo: '싱싱한 대구사과'},
   {name: 'mango', memo: '싱싱한 제주망고'},
-  {name: 'melon', memo: '싱싱한 서울멜론'}
+  {name: 'melon', memo: '싱싱한 서울멜론'},
+  {name: 'strawberry', memo: '싱싱한 부산딸기'}
 ];
 
   for(let i=0; i<FRUITS.length; i++){
@@ -34,21 +35,39 @@ const FRUITS=[    //이건 배열방
      let nameTag=e.target.previousElementSibling.previousElementSibling; 
      let name=nameTag.innerHTML;
 
-     let temp=localStorage.getItem('cart')
+      //로컬스토리지에서 꺼내옴
+     let temp=localStorage.getItem('cart');
+
+     let isHave=false;    //장바구니에 넣으려는 과일이 로컬스토리지에 있는지 여부를 알려주는 변수
+     let index;   // 장바구니에 넣으려는 과일이 스토리지에 있으면 몇번째 있는지 알려주는 변수
+
+
+
      if(temp !=null) {  //있는지 없는지 확인 필요 만약 있다면 그 정보들을 꺼내와야 함
       
       temp=JSON.parse(temp);  //문자열 형태를 원본인 배열로 되돌려준다 
+
+      temp.forEach((date,i) => {
+        if(date.name===name){
+          isHave=true;
+          index=i;
+        }
+      });
       
-      temp.push(name);  //그다음 새 장바구니에 담을 name추가
+      if(isHave){     //위 반복문에서 기존 로컬스토리지에 해당 과일이 있는지 없는지 확인 했으니까 그 여부에 따라 다르게 처리됨
+        temp[index].cnt++;
+      }else{
+        temp.push({'name':name, 'cnt':1});
+      }
 
       localStorage.setItem('cart', JSON.stringify(temp));  //추가된 정보를 다시 로컬스토리지에 담음
 
-     }else{
-      localStorage.setItem('cart', JSON.stringify([name]));
+     }else{   //과일이 없을때가 아닌 로컬스토리지가 비어있을때 실행되는 부분
+      localStorage.setItem('cart', JSON.stringify([{'name':name, 'cnt':1}])
+      );
      } 
-
      
-   
+
     })  ///여기까지는 새거1개만 저장 새로운게 추가되는 기능 필요, (깂을 꺼내오고, 새로 담을 정보를 추가,)
   }     
 

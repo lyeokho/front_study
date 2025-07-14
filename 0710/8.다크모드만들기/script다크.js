@@ -8,11 +8,22 @@
 const btn=document.querySelector('.btn-mode');
 const body=document.body;
 
-btn.addEventListener('click', () => {
+let isDark=false;  //다크모드면 true 아니면 false
 
-  alert(btn.value);
+btn.addEventListener('click', () => {  //다크모드 버튼 누르면 적용
+  
+  
+  if(isDark){
+    body.style.background='white';
+    body.style.color='black';
+    btn.value='다크모드';
+    isDark =! isDark;
+  }else{
+    document.body.style.background='black';
+    document.body.style.color='white';
+    btn.value='라이트모드';
+    isDark =! isDark;
+  }
 
-  document.body.style.background='black';
-  document.body.style.color='white';
 
 })
